@@ -1,0 +1,121 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Lawyer profile information and settings",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "lawFirm": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["uid", "name", "email", "createdAt"]
+    },
+    "Client": {
+      "title": "Client",
+      "description": "A client of the law firm",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "company": { "type": "string" },
+        "address": { "type": "string" },
+        "notes": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" },
+        "ownerId": { "type": "string" }
+      },
+      "required": ["id", "name", "email", "createdAt", "updatedAt", "ownerId"]
+    },
+    "Case": {
+      "title": "Case",
+      "description": "A legal case assigned to a client",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "caseNumber": { "type": "string" },
+        "title": { "type": "string" },
+        "clientId": { "type": "string" },
+        "clientName": { "type": "string" },
+        "status": { "type": "string", "enum": ["active", "pending", "closed", "appealed"] },
+        "practiceArea": { "type": "string", "enum": ["Corporate", "Criminal", "Family", "Intellectual Property", "Labor", "Real Estate", "Other"] },
+        "court": { "type": "string" },
+        "judge": { "type": "string" },
+        "description": { "type": "string" },
+        "oppositionName": { "type": "string" },
+        "oppositionLawyer": { "type": "string" },
+        "nextHearingDate": { "type": "string" },
+        "billingType": { "type": "string", "enum": ["Hourly", "Flat Fee", "Contingency"] },
+        "billingRate": { "type": "number" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" },
+        "ownerId": { "type": "string" }
+      },
+      "required": ["id", "caseNumber", "title", "clientId", "clientName", "status", "practiceArea", "createdAt", "updatedAt", "ownerId"]
+    },
+    "Billing": {
+      "title": "Billing",
+      "description": "An invoice or billing transaction for a case",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "caseId": { "type": "string" },
+        "caseTitle": { "type": "string" },
+        "clientId": { "type": "string" },
+        "clientName": { "type": "string" },
+        "amount": { "type": "number" },
+        "status": { "type": "string", "enum": ["paid", "unpaid", "overdue"] },
+        "dueDate": { "type": "string" },
+        "description": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" },
+        "ownerId": { "type": "string" }
+      },
+      "required": ["id", "caseId", "caseTitle", "clientId", "clientName", "amount", "status", "dueDate", "createdAt", "updatedAt", "ownerId"]
+    },
+    "Task": {
+      "title": "Task",
+      "description": "A workflow task associated with a case",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "caseId": { "type": "string" },
+        "caseTitle": { "type": "string" },
+        "title": { "type": "string" },
+        "dueDate": { "type": "string" },
+        "status": { "type": "string", "enum": ["pending", "completed"] },
+        "priority": { "type": "string", "enum": ["low", "medium", "high"] },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" },
+        "ownerId": { "type": "string" }
+      },
+      "required": ["id", "caseId", "caseTitle", "title", "dueDate", "status", "priority", "createdAt", "updatedAt", "ownerId"]
+    }
+  },
+  "firestore": {
+    "user_profiles/{userId}": {
+      "schema": "UserProfile",
+      "description": "Lawyer profile information"
+    },
+    "clients/{clientId}": {
+      "schema": "Client",
+      "description": "Lawyer's list of clients"
+    },
+    "cases/{caseId}": {
+      "schema": "Case",
+      "description": "Clients' associated cases"
+    },
+    "billing/{billingId}": {
+      "schema": "Billing",
+      "description": "Billing transaction details for legal fees and payments"
+    },
+    "tasks/{taskId}": {
+      "schema": "Task",
+      "description": "Daily legal tasks and deadlines"
+    }
+  }
+}

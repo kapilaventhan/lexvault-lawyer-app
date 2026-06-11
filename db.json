@@ -1,0 +1,286 @@
+{
+  "clients": [
+    {
+      "id": "cli_1",
+      "name": "Devendra Sharma",
+      "email": "devendra.sharma@nexustech.co.in",
+      "phone": "+91 98100 23456",
+      "company": "Nexus Telecom Solutions India Pvt. Ltd.",
+      "address": "Plot No. 472, Sector 5, Hitec City, Hyderabad, Telangana - 500081",
+      "notes": "Ongoing advisory on venture financing and Indian Company Law compliance. Preparing for Series B. Highly responsive client.",
+      "createdAt": "2026-01-15T09:00:00.000Z",
+      "updatedAt": "2026-01-15T09:00:00.000Z",
+      "ownerId": "lawyer_1"
+    },
+    {
+      "id": "cli_2",
+      "name": "Indira Sen",
+      "email": "indira.sen@apexrealty.in",
+      "phone": "+91 97412 87654",
+      "company": "Apex Commercial Realty Pvt. Ltd.",
+      "address": "Shree Heights, Flat No. 1098, M.G. Road, Bandra West, Mumbai, Maharashtra - 400050",
+      "notes": "Lease violation dispute regarding commercial retail space at Bandra West. Needs defense under CPC and local Rent Control Acts.",
+      "createdAt": "2026-02-10T10:30:00.000Z",
+      "updatedAt": "2026-02-10T10:30:00.000Z",
+      "ownerId": "lawyer_1"
+    },
+    {
+      "id": "cli_3",
+      "name": "Anish Gupta",
+      "email": "legal@anishgupta-ventures.in",
+      "phone": "+91 91234 56789",
+      "company": "AG Capital Holdings Limited",
+      "address": "88, Nariman Point, Marine Drive, Mumbai, Maharashtra - 400021",
+      "notes": "Corporate governance advisory under SEBI guidelines. Preferred billing terms: monthly retainer + flat fee per NCLT filing.",
+      "createdAt": "2026-03-05T14:15:00.000Z",
+      "updatedAt": "2026-03-05T14:15:00.000Z",
+      "ownerId": "lawyer_1"
+    }
+  ],
+  "cases": [
+    {
+      "id": "case_1",
+      "caseNumber": "MH-25-ICA-9812",
+      "title": "Nexus Telecom vs. Horizon AI Software Intellectual Property Dispute",
+      "clientId": "cli_1",
+      "clientName": "Devendra Sharma",
+      "status": "active",
+      "practiceArea": "Intellectual Property",
+      "court": "Bombay High Court",
+      "judge": "Hon'ble Justice G.S. Patel",
+      "description": "Patent infringement action under Section 64 of the Patents Act, 1970 against Horizon Inc. regarding neural network rendering patents. Horizon claims prior art from 2023. Our engineering reports indicate clear structural derivative code in Horizon's production models. Seeking permanent injunction and damages.",
+      "oppositionName": "Horizon Artificial Intelligence Pvt. Ltd.",
+      "oppositionLawyer": "Senior Advocate Harish Salve, Shardul Amarchand Mangaldas",
+      "nextHearingDate": "2026-07-22",
+      "billingType": "Hourly",
+      "billingRate": 35000,
+      "createdAt": "2026-01-18T11:00:00.000Z",
+      "updatedAt": "2026-05-12T16:00:00.000Z",
+      "ownerId": "lawyer_1"
+    },
+    {
+      "id": "case_2",
+      "caseNumber": "MH-50-CS-1093",
+      "title": "Apex Commercial Lease Breach & Subtenant Eviction",
+      "clientId": "cli_2",
+      "clientName": "Indira Sen",
+      "status": "active",
+      "practiceArea": "Real Estate",
+      "court": "City Civil Court, Dindoshi, Mumbai",
+      "judge": "Hon'ble Judge R.V. Sawant",
+      "description": "Lease breach action under Section 108 of the Transfer of Property Act, 1882 for unauthorized sub-letting of commercial premises at Bandra West. The sub-tenant is running a hazardous material storage service in breach of Section 12-C of the prime lease deed. Demanding immediate cure or vacant possession.",
+      "oppositionName": "Bandra Retailers Syndicate & Subtenants",
+      "oppositionLawyer": "Advocate Rohit Patil, Patil Chambers",
+      "nextHearingDate": "2026-06-28",
+      "billingType": "Flat Fee",
+      "billingRate": 450000,
+      "createdAt": "2026-02-12T09:00:00.000Z",
+      "updatedAt": "2026-04-03T10:20:00.000Z",
+      "ownerId": "lawyer_1"
+    },
+    {
+      "id": "case_3",
+      "caseNumber": "DEL-NCLT-4820",
+      "title": "SEBI Compliance Advisory & NCLT Reorganization",
+      "clientId": "cli_3",
+      "clientName": "Anish Gupta",
+      "status": "pending",
+      "practiceArea": "Corporate",
+      "court": "National Company Law Tribunal (NCLT), New Delhi Bench",
+      "judge": "Hon'ble President Ramalingam Sudhakar",
+      "description": "Advising AG Corporate Holdings on regulatory compliance following SEBI's updated Insider Trading regulations. Drafting customized fiduciary duty compliance protocols under Companies Act, 2013 and reorganizing board audit committee bylaws to safeguard stakeholder representation.",
+      "oppositionName": "Registrar of Companies (RoC), Delhi",
+      "oppositionLawyer": "Additional Solicitor General of India",
+      "nextHearingDate": "2026-08-05",
+      "billingType": "Contingency",
+      "billingRate": 1500000,
+      "createdAt": "2026-03-08T15:30:00.000Z",
+      "updatedAt": "2026-03-08T15:30:00.000Z",
+      "ownerId": "lawyer_1"
+    },
+    {
+      "id": "case_4",
+      "caseNumber": "DEL-CR-3104",
+      "title": "State of Maharashtra v. Rajesh Mehta & Ors.",
+      "clientId": "cli_2",
+      "clientName": "Indira Sen",
+      "status": "closed",
+      "practiceArea": "Criminal",
+      "court": "Sessions Court, Fort, Mumbai",
+      "judge": "Hon'ble Judge S.K. Kotwal",
+      "description": "Defense of director Rajesh Mehta on charges of felony insider trading and criminal breach of trust under the Indian Penal Code / Bharatiya Nyaya Sanhita (BNS), relative to Apex stock price changes during late 2025. Resulted in a negotiated compounding of offense and administrative penalty. Closed successfully with no imprisonment.",
+      "oppositionName": "State of Maharashtra represented by Special Public Prosecutor",
+      "oppositionLawyer": "Advocate General of Maharashtra",
+      "billingType": "Hourly",
+      "billingRate": 40000,
+      "createdAt": "2025-10-10T10:00:00.000Z",
+      "updatedAt": "2026-03-01T17:00:00.000Z",
+      "ownerId": "lawyer_1"
+    }
+  ],
+  "billing": [
+    {
+      "id": "bill_1",
+      "caseId": "case_1",
+      "caseTitle": "Nexus Telecom vs. Horizon AI Software Intellectual Property Dispute",
+      "clientId": "cli_1",
+      "clientName": "Devendra Sharma",
+      "amount": 1450000,
+      "status": "paid",
+      "dueDate": "2026-04-30",
+      "description": "Pre-trial preparation: written statements, documentary discovery files submission, and expert consultant reviews.",
+      "createdAt": "2026-04-01T10:00:00.000Z",
+      "updatedAt": "2026-04-20T16:30:00.000Z",
+      "ownerId": "lawyer_1"
+    },
+    {
+      "id": "bill_2",
+      "caseId": "case_1",
+      "caseTitle": "Nexus Telecom vs. Horizon AI Software Intellectual Property Dispute",
+      "clientId": "cli_1",
+      "clientName": "Devendra Sharma",
+      "amount": 675000,
+      "status": "unpaid",
+      "dueDate": "2026-06-25",
+      "description": "Drafting of response to Horizon's motion for summary judgment and claim construction replication briefing.",
+      "createdAt": "2026-05-20T11:00:00.000Z",
+      "updatedAt": "2026-05-20T11:00:00.000Z",
+      "ownerId": "lawyer_1"
+    },
+    {
+      "id": "bill_3",
+      "caseId": "case_2",
+      "caseTitle": "Apex Commercial Lease Breach & Subtenant Eviction",
+      "clientId": "cli_2",
+      "clientName": "Indira Sen",
+      "amount": 450000,
+      "status": "overdue",
+      "dueDate": "2026-05-15",
+      "description": "Flat fee retainer for lease violation formal filing in Mumbai City Civil Court, court appearance fee, and draft eviction notices.",
+      "createdAt": "2026-04-10T09:00:00.000Z",
+      "updatedAt": "2026-04-10T09:00:00.000Z",
+      "ownerId": "lawyer_1"
+    },
+    {
+      "id": "bill_4",
+      "caseId": "case_4",
+      "caseTitle": "State of Maharashtra v. Rajesh Mehta & Ors.",
+      "clientId": "cli_2",
+      "clientName": "Indira Sen",
+      "amount": 2100000,
+      "status": "paid",
+      "dueDate": "2026-03-15",
+      "description": "Criminal defense representation, compounding agreement finalization, and formal closing administrative logs.",
+      "createdAt": "2026-03-01T09:00:00.000Z",
+      "updatedAt": "2026-03-10T14:45:00.000Z",
+      "ownerId": "lawyer_1"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task_1",
+      "caseId": "case_1",
+      "caseTitle": "Nexus Telecom vs. Horizon AI Software Intellectual Property Dispute",
+      "title": "Submit Neural Network Code expert reports to Bombay High Court Civil registry",
+      "dueDate": "2026-06-15",
+      "status": "pending",
+      "priority": "high",
+      "createdAt": "2026-05-10T10:00:00.000Z",
+      "updatedAt": "2026-05-10T10:00:00.000Z",
+      "ownerId": "lawyer_1"
+    },
+    {
+      "id": "task_2",
+      "caseId": "case_2",
+      "caseTitle": "Apex Commercial Lease Breach & Subtenant Eviction",
+      "title": "File proof of service of Eviction Notice on commercial sub-tenants under Rent Control Act",
+      "dueDate": "2026-06-12",
+      "status": "pending",
+      "priority": "high",
+      "createdAt": "2026-05-12T09:00:00.000Z",
+      "updatedAt": "2026-05-12T09:00:00.000Z",
+      "ownerId": "lawyer_1"
+    },
+    {
+      "id": "task_3",
+      "caseId": "case_1",
+      "caseTitle": "Nexus Telecom vs. Horizon AI Software Intellectual Property Dispute",
+      "title": "Prepare Devendra Sharma (client) deposition speaking points for Chief Examination",
+      "dueDate": "2026-06-22",
+      "status": "pending",
+      "priority": "medium",
+      "createdAt": "2026-05-15T14:00:00.000Z",
+      "updatedAt": "2026-05-15T14:00:00.000Z",
+      "ownerId": "lawyer_1"
+    },
+    {
+      "id": "task_4",
+      "caseId": "case_3",
+      "caseTitle": "SEBI Compliance Advisory & NCLT Reorganization",
+      "title": "Draft Board Audit Committee bylaws revision markup under Companies Act, 2013",
+      "dueDate": "2026-07-01",
+      "status": "pending",
+      "priority": "low",
+      "createdAt": "2026-05-20T16:00:00.000Z",
+      "updatedAt": "2026-06-10T09:57:06.790Z",
+      "ownerId": "lawyer_1"
+    },
+    {
+      "id": "task_5",
+      "caseId": "case_2",
+      "caseTitle": "Apex Commercial Lease Breach & Subtenant Eviction",
+      "title": "Complete site physical inspection & take photos of unauthorized sub-leased structures",
+      "dueDate": "2026-05-28",
+      "status": "completed",
+      "priority": "high",
+      "createdAt": "2026-05-01T10:00:00.000Z",
+      "updatedAt": "2026-05-28T16:00:00.000Z",
+      "ownerId": "lawyer_1"
+    }
+  ],
+  "cachedStatutorySections": [
+    {
+      "actName": "The Transfer of Property Act, 1882",
+      "chapterName": "Chapter VIII - General and Special Practice Provisions",
+      "sectionNumber": "Section 174",
+      "title": "Detailed statutory guidelines on Property practice code",
+      "description": "This detailed statutory section regulates general legal procedures, rights, and standard liabilities relative to Property legal disputes in India. Sub-section (1) establishes that every affected entity or citizen has the absolute right to direct representation. Sub-section (2) provides that any violations entail legal compensation or penalties specified by rules.",
+      "explanationsProvisos": "Provided that nothing in this clause shall apply to actions taken in good faith or as authorized by public administrators of the Indian Union. Explanation: For the purpose of this section, regulatory compliance is governed under central rules.",
+      "amendmentsNotifications": "Amended by the Consolidated Legal Amendments Act, 2023 with effect from August 15, 2023, expanding regulatory fines. Notification No. REG-441/2026: Directs that digital filings are fully verified legally.",
+      "keyKeywords": [
+        "statutory",
+        "audit",
+        "property",
+        "legal"
+      ],
+      "category": "Property",
+      "id": "cached-sec-1781085285197-2gin"
+    }
+  ],
+  "cachedCaseLaws": [
+    {
+      "caseName": "Consolidated Solutions Corp. v. Union of India and Others",
+      "citation": "AIR 2024 SC 815",
+      "court": "Supreme Court of India",
+      "judgmentDate": "2024-03-12",
+      "judgeName": "Justice D.Y. Chandrachud",
+      "summary": "This landmark judicial decision from the Supreme Court of India addresses the deep procedural disputes on Property. The petitioning party Consolidated Solutions Corp. entered appeals challenging executive show-cause notices which were issued without traditional opportunity. The Court, led by Justice D.Y. Chandrachud, examined the doctrine of constitutional reasonableness, holding that failure to serve standard notice violates Article 14 rules. The appeal was allowed, and all impugned administrative demands were set aside.",
+      "keyPrinciples": [
+        "Procedural reasonableness is an essential safeguard of administrative actions under Property practice.",
+        "Arbitrary unilateral declarations violate constitutional guarantees of equity and fairness.",
+        "Provisions of The Transfer of Property Act, 1882 must be interpreted harmoniously with civil procedure rules."
+      ],
+      "applicableSections": [
+        "The Transfer of Property Act, 1882 - Section 174"
+      ],
+      "relatedPrecedents": [
+        "Shreya Singhal v. Union of India (2015)",
+        "Kesavananda Bharati v. State of Kerala (1973)"
+      ],
+      "category": "Property",
+      "isLandmark": true,
+      "recentUpdate": "Adopted as a major precedent by High Courts nationwide in subsequent commercial matters.",
+      "id": "cached-case-1781085285197-5ujc"
+    }
+  ]
+}

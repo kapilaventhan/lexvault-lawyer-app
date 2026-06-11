@@ -1,0 +1,6 @@
+{
+  "name": "Legal Case & Client Manager",
+  "description": "All-in-one workspace for lawyers to store client details, track active cases, schedule tasks, log billing invoices, and leverage server-side Gemini AI for Case Summaries and Document Drafting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
