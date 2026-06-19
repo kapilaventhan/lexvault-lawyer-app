@@ -271,14 +271,14 @@ export default function App() {
 
         {/* Codebase Export Section (Desktop) */}
         <div className="p-4 border-t border-slate-800/65 hidden md:block">
-          <button
+          {/* <button
             onClick={handleDownloadCodebase}
             disabled={isDownloadingCode}
             className="w-full flex items-center justify-center gap-2 px-3.5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold tracking-wide rounded-xl shadow-md transition-all cursor-pointer border border-blue-500/20 disabled:opacity-75"
           >
             <Download className={`h-4 w-4 ${isDownloadingCode ? "animate-spin" : ""}`} />
             {isDownloadingCode ? "Compiling ZIP Code..." : "Download Workspace ZIP"}
-          </button>
+          </button> */}
         </div>
 
         {/* Lawyer identity card */}
